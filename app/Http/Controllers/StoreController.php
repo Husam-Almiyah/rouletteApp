@@ -13,12 +13,6 @@ class StoreController extends Controller
         return view('admin.dashboard', compact('users'));
     }
 
-    public function edit()
-    {
-        $users = User::all();
-        return view('admin.dashboard', compact('users'));
-    }
-
     public function create()
     {
         return view('stores.create');
